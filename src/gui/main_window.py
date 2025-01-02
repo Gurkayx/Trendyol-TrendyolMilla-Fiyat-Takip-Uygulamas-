@@ -273,7 +273,7 @@ class HelpDialog(QDialog):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Trendyol & TrendyolMilla Fiyat Takip uygulaması By. Gürkay")
+        self.setWindowTitle("Trendyol & TrendyolMilla Fiyat Takip Uygulaması")
         self.setGeometry(100, 100, 1200, 700)
         
         # Sistem tepsisi ikonu oluştur
@@ -405,12 +405,6 @@ class MainWindow(QMainWindow):
         title_label.setAlignment(Qt.AlignCenter)
         title_label.setStyleSheet("color: #DB7093;")
         title_layout.addWidget(title_label)
-        
-        special_label = QLabel("Emel için özel yapıldı ❤")
-        special_label.setFont(QFont('Arial', 10, QFont.StyleItalic))
-        special_label.setStyleSheet("color: #C71585;")
-        special_label.setAlignment(Qt.AlignCenter)
-        title_layout.addWidget(special_label)
         
         top_layout.addWidget(title_container)
         
